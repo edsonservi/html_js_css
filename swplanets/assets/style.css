@@ -1,0 +1,221 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --texto: rgba(206, 206, 26, 0.911);
+  --bgligth: rgba(206, 206, 26, 0.514);
+  --bg: rgba(0,0,0,0);
+  --bgdark: rgba(0,0,0,1);
+}
+
+body{
+  background-image: url('./bg.png');
+}
+div#esquerda {
+  list-style-type: none;
+  margin: 0 10px;
+  padding: 0;
+  width: 20%;
+  background-color: var(--bg);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+.logo {
+  position: static;
+  margin: 5px 0px;
+  text-align: center;
+  width: 90%;
+}
+.logo img{
+  margin: 5px 0px;
+  width: 140px;
+  height: 140px;
+}
+.logo input placeholder {
+  color: var(--texto);
+}
+.logo input{
+  background-color:var(--bg);
+  text-align: center;
+  color: var(--texto);
+  font-size: 1.2em;
+  margin: 0;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 99%;
+  height: 40px;
+  border-radius: 20px;
+}
+::-webkit-input-placeholder { /* Edge */
+  font-family: "Audiowide", sans-serif;
+  color: var(--texto);
+  font-size: 1.2em;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-family: "Audiowide", sans-serif;
+  color: var(--texto);
+  font-size: 1.2em;
+}
+::placeholder {
+  font-family: "Audiowide", sans-serif;
+  color: var(--texto);
+  font-size: 1.2em;
+}
+div#esquerda ul, li{
+  text-decoration: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+div#esquerda button {
+  display: block;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-family: "Audiowide", sans-serif;
+  background-color: var(--bg);
+  width: 90%;
+  color: var(--texto);
+  border-left: 0px;
+  border-right: 0px;
+  margin: 5px 0;
+  font-size: 1.2em;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  border: none;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--bgligth);
+  border-radius: 10px;
+}
+div#direita {
+  position: fixed;
+  width: 75%;
+  height: 660px;;
+  margin-left: 22%;
+  padding: 5px 16px;
+}
+div#direita h1{
+  font-family: "Audiowide", sans-serif;
+  color: var(--texto);
+  font-size: 7.2em;
+  font-weight: 900;
+  margin-top: 5px;
+}
+#result{
+  color: var(--texto);
+  width: 45%;
+  height: 450px;
+  margin-top: 15px;
+  margin-left: 25px;
+  overflow: auto;
+  float: left;
+  text-align: center;
+}
+#result h2{
+  font-family: "Audiowide", sans-serif;
+  color: var(--texto);
+  font-size: 4.2em;
+  text-align: center;
+  font-weight: 900;
+  margin-top: 5px;
+}
+#result p{
+  font-family: "Audiowide", sans-serif;
+  line-height: 25px;
+  font-size: 1.2em;
+  color:  var(--bgdark);
+  background-color: var(--bgligth);
+  border-radius: 45px;
+  margin: 20px auto;
+  padding: 15px;
+  width: 90%;
+  letter-spacing: 2px;
+  text-align: justify;
+  font-weight: 200;
+}
+#result strong{
+  font-weight: 600;
+  margin: 10px;
+}
+#result button{
+  font-family: "Audiowide", sans-serif;
+  line-height: 25px;
+  font-size: 1.2em;
+  color: var(--bgdark);
+  background-color: var(--texto);
+  border-radius: 45px;
+  margin: 20px auto;
+  padding: 15px;
+  width: 90%;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: 200;
+}
+#censo{
+  color: var(--texto);
+  width: 40%;
+  height: 450px;
+  margin-top: 15px;
+  margin-left: 25px;
+  float: left;
+}
+#censo table{
+  font-family: "Audiowide", sans-serif;
+  margin-top: 110px;
+  line-height: 25px;
+  font-size: 1.2em;
+  width: 100%;
+}
+#censo th, td{
+  padding: 5px;
+  color: var(--bgdark);
+  background-color: var(--bgligth);
+  border-radius: 45px;
+}
+#censo td{
+  padding: 5px;
+  color: var(--bgdark);
+  background-color: var(--bgligth);
+  border-radius: 45px;
+}
+#censo .center{
+  text-align: center;
+}
+#censo h3{
+  font-family: "Audiowide", sans-serif;
+  line-height: 25px;
+  font-size: 1.2em;
+  width: 100%;
+  text-align:justify;
+  margin-top: 110px;
+  padding: 140px 25px;
+  color: var(--bgdark);
+  background-color: var(--bgligth);
+  border-radius: 45px;
+
+}
+#carregando{
+  width: 100%;
+  height: 100%;
+  position:'auto';
+  opacity: 0.7;
+  background-color: var(--bgligth);
+  display: block;
+  margin: auto;
+}
+#carregando-content{
+  text-align: center;
+  height: 1600px;
+}
+#carregando img{
+  margin-top: 150px;
+  border-radius: 100%;
+}

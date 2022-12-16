@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong">
+  <link rel="stylesheet" href="./assets/style.css">
+  <script src="https://kit.fontawesome.com/46b048d4fc.js" crossorigin="anonymous"></script>
+  <title>Star Wars Planet</title>
+</head>
+<body>  
+  <main>
+    <div id="esquerda">
+      <div class="logo">
+        <img src="./assets/logo.png" alt="Star Wars">
+        <input type="text" id="searcher" onkeyup="search()" placeholder="Search for planet...">
+      </div>
+      
+      <ul id="planetario">
+      </ul>
+    </div>
+    <div id="direita">
+      <h1>Planet Info</h1>
+      <div id="result">
+      </div>
+      <div id="censo">
+      </div>
+    </div>      
+  </main>
+
+  
+
+  <div id="carregando">
+    <div id="carregando-content">
+      <img src="./assets/loader.gif" alt="loading">
+    </div>
+  </div>
+
+  <script src="./assets/scripts.js"></script>
+</body>
+</html>
